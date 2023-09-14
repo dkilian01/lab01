@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="289.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AboutViewController">
+   <children>
+      <TextArea fx:id="textAreaAbout" layoutX="45.0" layoutY="43.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label fx:id="labelAbout" layoutX="45.0" layoutY="14.0" text="O programie:" />
+      <Button fx:id="btnBack" layoutX="119.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#btnExitClicked" text="Wyjdz" />
+   </children>
+</AnchorPane>

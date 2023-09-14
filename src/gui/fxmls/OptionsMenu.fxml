@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="289.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.OptionsMenuController">
+   <children>
+      <ChoiceBox fx:id="languageChoiceBox" layoutX="70.0" layoutY="93.0" prefWidth="150.0" />
+      <CheckBox fx:id="cbMusic" layoutX="114.0" layoutY="173.0" mnemonicParsing="false" onMouseClicked="#chMusicClicked" text="Muzyka" />
+      <Button fx:id="btnCancel" layoutX="55.0" layoutY="320.0" mnemonicParsing="false" onMouseClicked="#btnCancelClicked" text="Anuluj" />
+      <Button fx:id="btnAccept" layoutX="169.0" layoutY="320.0" mnemonicParsing="false" onMouseClicked="#btnAcceptClicked" text="Potwierdz" />
+      <Label fx:id="labelLanguage" layoutX="70.0" layoutY="68.0" text="Jezyk:" />
+   </children>
+</AnchorPane>

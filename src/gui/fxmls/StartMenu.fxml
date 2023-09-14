@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="289.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.StartMenuController">
+   <children>
+      <Label fx:id="labelWelcome" layoutX="12.0" layoutY="47.0" text="Welcome!" />
+      <Button fx:id="btnSolveProblem" layoutX="90.0" layoutY="99.0" mnemonicParsing="false" onMouseClicked="#btnSolveProblemClicked" text="Solve problem" />
+      <Button fx:id="btnExit" layoutX="115.0" layoutY="146.0" mnemonicParsing="false" onMouseClicked="#btnExitClicked" text="Exit" />
+      <ImageView fitHeight="242.0" fitWidth="209.0" layoutX="40.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/images.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutY="1.0" prefHeight="25.0" prefWidth="289.0">
+        <menus>
+          <Menu fx:id="menuMenu" mnemonicParsing="false" text="Menu">
+            <items>
+                  <MenuItem fx:id="menuItemSettings" mnemonicParsing="false" onAction="#menuItemSettingsClicked" text="Settings" />
+                  <MenuItem fx:id="menuItemAbout" mnemonicParsing="false" onAction="#menuItemAboutClicked" text="About us" />
+              <MenuItem fx:id="menuItemExit" mnemonicParsing="false" onAction="#menuItemExit" text="Exit" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="todayIsLabel" layoutX="207.0" layoutY="26.0" text="Dzisiaj jest:" />
+      <Label fx:id="dataLabel" layoutX="207.0" layoutY="47.0" text="Data" />
+   </children>
+</AnchorPane>
